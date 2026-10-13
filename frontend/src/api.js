@@ -3,7 +3,7 @@ export const getToken = () => localStorage.getItem('sw_token');
 export async function api(path, { method = 'GET', body, raw } = {}) {
   let r;
   try {
-    r = await fetch('http://expense-tracker-m02o.onrender.com' + path, {
+    r = await fetch('http://expense-tracker-m02o.onrender.com/api' + path, {
       method,
       headers: { 'Content-Type': 'application/json', ...(getToken() ? { Authorization: 'Bearer ' + getToken() } : {}) },
       body: body ? JSON.stringify(body) : undefined,

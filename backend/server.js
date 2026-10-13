@@ -20,5 +20,5 @@ const { protect } = require('./middleware/auth');
   }
   app.use((err, req, res, next) => { console.error(err); res.status(err.status || 500).json({ error: err.message || 'Server error' }); });
   const PORT = process.env.PORT || 5000;
-  app.listen(PORT, () => console.log(`SpendWise running -> http://localhost:${PORT}`));
+  app.listen(PORT, () => console.log(`SpendWise running -> http://expense-tracker-m02o.onrender.com:${PORT}`));
 })();
