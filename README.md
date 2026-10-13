@@ -3,7 +3,7 @@
 Full-stack personal finance app. React + Vite + Recharts frontend, Express.js + JWT backend, SQLite (sql.js) database.
 
 ## Run (easy)
-Windows: double-click `start.bat` -> opens http://localhost:5000
+Windows: double-click `start.bat` -> opens http://expense-tracker-m02o.onrender.com
 Mac/Linux: `bash start.sh`
 Click **"Try demo account"** on the login page to see everything with sample data.
 
